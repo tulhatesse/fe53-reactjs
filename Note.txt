@@ -1,0 +1,9 @@
+=== Buoi 1 ===
+    * Component:
+        - Stateful: class
+        - Stateless: function
+
+=== Buoi 2 ===
+    * Rendering-element: {}
+    * Handle Event: onClick
+    * State: Khi state thay đổi thì component sẽ render lại (re-render)
