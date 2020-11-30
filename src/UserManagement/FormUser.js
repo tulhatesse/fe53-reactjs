@@ -16,8 +16,11 @@ export default class FormUser extends Component {
   handleChange = (evt) => {
     console.log(evt.target.name, evt.target.value);
 
+    const name = evt.target.name; // username
+
     this.setState({
-      [evt.target.name]: evt.target.value,
+      [name]: evt.target.value,
+      // userrname: evt.target.value
     });
   };
 
