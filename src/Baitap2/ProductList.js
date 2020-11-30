@@ -17,6 +17,11 @@ export default class ProductList extends Component {
     });
   };
 
+  addToCart = (product) => {
+    console.log(product);
+    this.props.onAddToCart(product);
+  };
+
   render() {
     const { productList } = this.props;
     return (
@@ -32,9 +37,9 @@ export default class ProductList extends Component {
                   {/* trong ví dụ này: ở component con mình gọi onSlect() suy ra component cha sẽ chạy hàm selectProduct */}
                   <ProductItem
                     product={product}
+                    onAddToCart={this.addToCart}
                     onSelect={(product) => this.selectProduct(product)}
                     // onSelect={this.selectProduct}
-
                   />
                 </div>
               </div>

@@ -6,7 +6,7 @@ export default class ProductItem extends Component {
     // onSelect là 1 function
     // Để truyền dữ liệu lên component cha, ta sẽ gọi props onSelect và truyền param là product vào
     const { onSelect } = this.props;
-    onSelect(product)
+    onSelect(product);
   };
 
   render() {
@@ -28,7 +28,10 @@ export default class ProductItem extends Component {
           >
             Detail
           </button>
-          <button data-toggle="modal" data-target="#modalId"className="btn btn-danger">
+          <button
+            className="btn btn-danger"
+            onClick={() => this.props.onAddToCart(product)}
+          >
             Cart
           </button>
         </div>

@@ -1,20 +1,22 @@
-import Baitap1 from "./Baitap1";
-import Baitap2 from "./Baitap2";
-import RenderingElements from "./rendering-elements";
-import HandlingEvent from "./handling-events";
-import ExampleHandlingEvent from "./handling-events/example";
-import State from "./state";
-import ExampleCar from "./example-car";
-import RenderArray from './renderArray'
-import Welcome from './props/Welcome'
-import WelcomeFunc from './props/WelcomeFunc'
-import Button from './props/Button'
+// import Baitap1 from "./Baitap1";
+// import Baitap2 from "./Baitap2";
+// import RenderingElements from "./rendering-elements";
+// import HandlingEvent from "./handling-events";
+// import ExampleHandlingEvent from "./handling-events/example";
+// import State from "./state";
+// import ExampleCar from "./example-car";
+// import RenderArray from './renderArray'
+// import Welcome from './props/Welcome'
+// import WelcomeFunc from './props/WelcomeFunc'
+// import Button from './props/Button'
+import UserManagement from "./UserManagement";
 
 function App() {
   return (
     <div>
+      <UserManagement />
       {/* <Baitap1 /> */}
-      <Baitap2 />
+      {/* <Baitap2 /> */}
       {/* <RenderingElements /> */}
       {/* <hr /> */}
       {/* <HandlingEvent /> */}
@@ -40,16 +42,5 @@ function App() {
     </div>
   );
 }
-
-
-
-
-
-
-
-
-
-
-
 
 export default App;
