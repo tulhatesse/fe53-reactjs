@@ -9,9 +9,9 @@ export default class Search extends Component {
 
   render() {
     return (
-      <div class="w-25">
+      <div className='w-25'>
         <input
-          className="form-control"
+          className='form-control'
           // onChange={this.handleChange}
           onChange={(evt) => this.handleChange(evt)}
         />

@@ -6,10 +6,14 @@ export default class UserList extends Component {
     this.props.onDelete(userId);
   };
 
+  handleUpdate = (user) => {
+    this.props.onUpdate(user);
+  };
+
   render() {
     const { userList } = this.props;
     return (
-      <table className="table">
+      <table className='table'>
         <thead>
           <tr>
             <th>Username</th>
@@ -27,6 +31,7 @@ export default class UserList extends Component {
                 key={user.id}
                 user={user}
                 onDelete={this.handleDelete}
+                onUpdate={this.handleUpdate}
               />
             );
           })}
